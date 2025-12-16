@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dd3hrtl1yeuoh"]
+[gd_scene load_steps=5 format=3 uid="uid://dd3hrtl1yeuoh"]
 
 [ext_resource type="PackedScene" uid="uid://gsnrlqw87iew" path="res://scenes/player.tscn" id="1_8infc"]
+[ext_resource type="PackedScene" uid="uid://i0ugb6s8ytbh" path="res://scenes/interactable.tscn" id="2_7p06m"]
+[ext_resource type="Texture2D" uid="uid://cgbpwktye2s0k" path="res://assets/placeholder_for_room.jpg" id="2_qv3dd"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_5vi6a"]
 
@@ -15,8 +17,18 @@ shape = SubResource("WorldBoundaryShape2D_5vi6a")
 position = Vector2(-1, -0.99999994)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(0.6211504, 0.63452166)
-scale = Vector2(0.6211504, 0.6345217)
-zoom = Vector2(4, 4)
+position = Vector2(-13.044158, -57.74148)
+scale = Vector2(5.657732, -0.28955027)
+zoom = Vector2(3.5, 3.5)
 position_smoothing_enabled = true
 position_smoothing_speed = 11.0
+
+[node name="PlaceholderForRoom" type="Sprite2D" parent="."]
+z_index = -999
+position = Vector2(-100, -96)
+scale = Vector2(0.6983036, 0.4796954)
+texture = ExtResource("2_qv3dd")
+
+[node name="Interactable" parent="." instance=ExtResource("2_7p06m")]
+position = Vector2(-139, -10)
+scale = Vector2(1.6099161, 1.5759901)
