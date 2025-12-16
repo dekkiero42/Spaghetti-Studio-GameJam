@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://xton506cwm8p"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_sh265"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4flbx"]
+radius = 2.828427
+
+[node name="Player" type="Node2D"]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+position = Vector2(5.9604645e-08, -4.7499995)
+scale = Vector2(6, 4.750001)
+mesh = SubResource("CapsuleMesh_sh265")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -3)
+shape = SubResource("CircleShape2D_4flbx")
