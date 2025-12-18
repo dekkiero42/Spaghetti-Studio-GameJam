@@ -1,0 +1,20 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1766079814
+icon.svg::CompressedTexture2D::662807476429475980::1766014129::1766014194::1::::<><><>0<>0<>27e5df0dc30b359e97f8a67c1a67ae00<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+README.md::TextFile::-1::1766014128::0::1::::<><><>0<>0<><>::
+::res://addons/::1766014128
+::res://addons/godot-git-plugin/::1766014129
+git_plugin.gdextension::GDExtension::3868711756498908038::1766014128::0::1::::<><><>0<>0<><>::
+plugin.cfg::TextFile::-1::1766014129::0::1::::<><><>0<>0<><>::
+THIRDPARTY.md::TextFile::-1::1766014128::0::1::::<><><>0<>0<><>::
+::res://addons/godot-git-plugin/linux/::1766014128
+::res://addons/godot-git-plugin/macos/::1766014128
+::res://addons/godot-git-plugin/win64/::1766079808
+::res://assets/::1766014194
+personaggio.png::CompressedTexture2D::848922913180622812::1766014129::1766014194::1::::<><><>0<>0<>31efa546f98d86e5ef36ed868a468a0a<>res://.godot/imported/personaggio.png-518a619c21a4e70ea3ec019c19c9014f.ctex::
+placeholder_for_room.jpg::CompressedTexture2D::5196989405007524604::1766014129::1766014194::1::::<><><>0<>0<>4dfd6797e344ed01864bdaba7077c074<>res://.godot/imported/placeholder_for_room.jpg-1c69fd37e9924ee2d4603e73a7e9a5cd.ctex::
+::res://scenes/::1766014129
+main _scene.tscn::PackedScene::7428087552702897747::1766014129::0::1::::<><><>0<>0<><>::uid://3x32gdps50d1::::res://scenes/player.tscn<>uid://cgbpwktye2s0k::::res://assets/placeholder_for_room.jpg
+player.tscn::PackedScene::2014516922922482452::1766014129::0::1::::<><><>0<>0<><>::uid://mdhvvveuy0m7::::res://assets/personaggio.png<>uid://q1q5aexk6unj::::res://scripts/character_body_2d.gd
+::res://scripts/::1766014129
+character_body_2d.gd::GDScript::1177720372754320395::1766014129::0::1::::<>CharacterBody2D<><>0<>0<><>::
