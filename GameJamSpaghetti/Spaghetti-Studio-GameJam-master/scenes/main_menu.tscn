@@ -1,0 +1,82 @@
+[gd_scene load_steps=5 format=3 uid="uid://ds7clx8w0dffo"]
+
+[ext_resource type="Script" uid="uid://c3avhcg3smy6c" path="res://main_menu.gd" id="1_bqqt6"]
+[ext_resource type="Texture2D" uid="uid://27w4hyih1x84" path="res://assets/backgrounds/main_menu_bg.png" id="1_l6cm7"]
+[ext_resource type="FontFile" uid="uid://bajli1e5wnpq6" path="res://assets/fonts/good timing bd.otf" id="2_ekxnf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bqqt6"]
+bg_color = Color(0.26666668, 0.24705882, 0.48235294, 1)
+skew = Vector2(0.01, 0)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.4117647, 0.5019608, 0.61960787, 1)
+shadow_color = Color(0.16470589, 0.09019608, 0.23137255, 1)
+shadow_size = 1
+shadow_offset = Vector2(3, 3)
+anti_aliasing_size = 2.4
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bqqt6")
+
+[node name="SpaceBackground" type="Sprite2D" parent="."]
+position = Vector2(7.274747e-05, 8.34465e-06)
+scale = Vector2(0.57291675, 0.6)
+texture = ExtResource("1_l6cm7")
+
+[node name="Start" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -158.0
+offset_top = 12.0
+offset_right = 134.0
+offset_bottom = 91.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0.58431375, 0.77254903, 0.6745098, 1)
+theme_override_colors/font_focus_color = Color(0.58431375, 0.77254903, 0.6745098, 1)
+theme_override_colors/font_pressed_color = Color(0.4117647, 0.5019608, 0.61960787, 1)
+theme_override_colors/font_hover_color = Color(0.58431375, 0.77254903, 0.6745098, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.58431375, 0.77254903, 0.6745098, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_bqqt6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_bqqt6")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bqqt6")
+text = "Start"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -331.775
+offset_top = -192.0
+offset_right = 331.775
+offset_bottom = -11.8506775
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0.58431375, 0.77254903, 0.6745098, 1)
+theme_override_fonts/normal_font = ExtResource("2_ekxnf")
+theme_override_font_sizes/normal_font_size = 61
+text = "GAME NAME"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
