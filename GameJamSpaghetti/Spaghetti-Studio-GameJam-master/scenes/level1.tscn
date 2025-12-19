@@ -1,7 +1,11 @@
-[gd_scene load_steps=5 format=4 uid="uid://dd3hrtl1yeuoh"]
+[gd_scene load_steps=9 format=4 uid="uid://dd3hrtl1yeuoh"]
 
 [ext_resource type="PackedScene" uid="uid://3x32gdps50d1" path="res://scenes/player.tscn" id="1_7p06m"]
 [ext_resource type="Texture2D" uid="uid://cgbpwktye2s0k" path="res://assets/backgrounds/placeholder_for_room.jpg" id="2_qv3dd"]
+[ext_resource type="Script" uid="uid://crmf3l6qbagdh" path="res://scripts/sound_manager.gd" id="3_6sh32"]
+[ext_resource type="AudioStream" uid="uid://bwe1hvkin7g10" path="res://audio/music/Happy.mp3" id="4_ejswk"]
+[ext_resource type="AudioStream" uid="uid://qum3vkdmgls8" path="res://audio/music/Sad.mp3" id="5_bbk5w"]
+[ext_resource type="AudioStream" uid="uid://ph2xln1nw2kk" path="res://audio/music/Angry.mp3" id="6_conm7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qv3dd"]
 texture = ExtResource("2_qv3dd")
@@ -1069,3 +1073,15 @@ polygon = PackedVector2Array(-4, 5, -149, 5, -149, -346, 951, -356, 952, 1, 722,
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2(553, 648)
 polygon = PackedVector2Array(3, 0, -546, -3, -549, -297, -607, -291, -617, 31, 654, 41, 652, -303, 555, -301, 554, -4)
+
+[node name="MusicManager" type="Node" parent="."]
+script = ExtResource("3_6sh32")
+highMoodMusic = ExtResource("4_ejswk")
+midMoodMusic = ExtResource("5_bbk5w")
+lowMoodMusic = ExtResource("6_conm7")
+
+[node name="MusicPlayer1" type="AudioStreamPlayer" parent="MusicManager"]
+bus = &"Music"
+
+[node name="MusicPlayer2" type="AudioStreamPlayer" parent="MusicManager"]
+bus = &"Music"

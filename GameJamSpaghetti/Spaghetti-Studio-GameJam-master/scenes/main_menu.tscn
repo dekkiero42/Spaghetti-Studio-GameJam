@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://ds7clx8w0dffo"]
+[gd_scene load_steps=5 format=3 uid="uid://ds7clx8w0dffo"]
 
 [ext_resource type="Script" uid="uid://c3avhcg3smy6c" path="res://main_menu.gd" id="1_bqqt6"]
 [ext_resource type="Texture2D" uid="uid://27w4hyih1x84" path="res://assets/backgrounds/main_menu_bg.png" id="1_l6cm7"]
 [ext_resource type="FontFile" uid="uid://bajli1e5wnpq6" path="res://assets/fonts/good timing bd.otf" id="2_ekxnf"]
-[ext_resource type="AudioStream" uid="uid://bwe1hvkin7g10" path="res://audio/music/Happy.mp3" id="4_wu84c"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bqqt6"]
 bg_color = Color(0.26666668, 0.24705882, 0.48235294, 1)
@@ -79,10 +78,5 @@ theme_override_font_sizes/normal_font_size = 61
 text = "GAME NAME"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="MusicPlayer" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("4_wu84c")
-autoplay = true
-bus = &"Music"
 
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
