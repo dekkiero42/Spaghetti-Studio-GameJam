@@ -1,3 +1,3 @@
-res://scenes/main _scene.tscn
+res://default_bus_layout.tres
 res://scenes/main_menu.tscn
-res://main_menu.gd
+res://scripts/sound_manager.gd

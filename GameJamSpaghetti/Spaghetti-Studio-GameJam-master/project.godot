@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 window/size/viewport_width=1100
 
+[dotnet]
+
+project/assembly_name="jam"
+
 [editor]
 
 version_control/plugin_name="GitPlugin"
